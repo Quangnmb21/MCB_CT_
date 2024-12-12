@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Data_Sensor</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <!-- Nội dung của Sidebar ở đây -->
+        </div>
+
+        <div class="main">
+            <nav>
+                <ul class="options">
+                    <button class="Control" data-state="0"><i class="fas fa-cogs"></i> Control</button>
+                    <button class="Chart" data-state="0"><i class="fas fa-chart-bar"></i> Chart</button>
+                    <button class="Data" data-state="0"><i class="fas fa-database"></i> Data</button>
+                    <button class="History" data-state="0"><i class="fas fa-history"></i> History</button>
+                    <button class="Test" data-state="0"><i class="fa-solid fa-database"></i></i> Test</button>
+                </ul>
+            </nav>
+
+            <!-- Phần tử này sẽ chứa nội dung từ control.html -->
+            <div id="tab-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const tabContent = document.getElementById("tab-content");
+
+        // Kiểm tra trạng thái tab hiện tại đã được lưu trong sessionStorage
+        const savedTab = sessionStorage.getItem('activeTab') || 'Control';
+        setActiveTab(savedTab);
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const currentTab = sessionStorage.getItem('activeTab') || 'Control';
+                const clickedTab = button.classList[0];
+
+                // Nếu trạng thái thay đổi từ 0 sang 1
+                if (currentTab !== clickedTab) {
+                    sessionStorage.setItem('activeTab', clickedTab);
+                    sessionStorage.setItem(`tabState-${clickedTab}`, 1); // Đánh dấu tab được chọn là 1
+                    sessionStorage.setItem(`tabState-${currentTab}`, 0); // Đánh dấu tab trước đó là 0
+                    location.reload(); // Reload trang
+                }
+            });
+        });
+
+        // Hàm đặt tab được chọn là 1
+        function setActiveTab(tabName) {
+            buttons.forEach(button => {
+                const tabClass = button.classList[0];
+                const isActive = tabClass === tabName;
+                button.setAttribute('data-state', isActive ? 1 : 0);
+                if (isActive) {
+                    button.classList.add("active");
+                    loadTabContent(tabName); // Tải nội dung tab
+                } else {
+                    button.classList.remove("active");
+                }
+            });
+        }
+
+        // Hàm để tải và chèn nội dung vào tab-content
+        function loadTabContent(tabName) {
+            // Kiểm tra nếu nội dung đã được tải từ trước
+            let content = sessionStorage.getItem(`content-${tabName}`);
+            if (content) {
+                tabContent.innerHTML = content; // Sử dụng nội dung đã lưu trong sessionStorage
+            } else {
+                // Nếu chưa có, tải nội dung từ file và lưu vào sessionStorage
+                fetch(`tabs/${tabName.toLowerCase()}.html`)
+                    .then(response => response.text())
+                    .then(data => {
+                        tabContent.innerHTML = data;
+                        sessionStorage.setItem(`content-${tabName}`, data); // Lưu nội dung vào sessionStorage
+                    })
+                    .catch(error => {
+                        console.error("Error loading the content: ", error);
+                        tabContent.innerHTML = "<p>Failed to load content.</p>";
+                    });
+            }
+        }
+    </script>
+
+    <!-- <script src="./script/control-icon.js"></script> -->
+     <script src="./test/control.js"></script>
+    <script src="./script/API/API-TTCB.js"></script>
+    <script src="./script/API/API-chart-TTCB.js"></script>
+    <script src="./script/API/API-data.js"></script>
+    <script src="./script/API/API-history.js"></script>
+    <script src="./script/lightbuld.js"></script>
+    <script src="./tabs/script-lightbulb.js"></script>
+ 
+   
+</body>
+
+</html>

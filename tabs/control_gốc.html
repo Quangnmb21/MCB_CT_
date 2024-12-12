@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .led-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
+        .led {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .led-icon {
+            font-size: 100px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .led-icon.on {
+            color: green;  /* Màu xanh lá khi bật */
+        }
+
+        .led-icon.off {
+            color: black;  /* Màu đen khi tắt */
+        }
+
+        .rotate {
+            animation: rotateAnimation 1s infinite linear;
+        }
+
+        @keyframes rotateAnimation {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="content-Control" class="tab-content active">
+        <div class="cards" id="weather-cards">
+            <div class="card3">
+                <h4 class="card-heading">Thông tin cảm biến đo được</h4>
+                <div class="content">
+                    <div class="icon-info">
+                        <i class="fa-solid fa-thermometer-half"></i>
+                        <p class="temperature-text">Loading</p>
+                    </div>
+                    <div class="icon-info">
+                        <i class="fa-solid fa-sun"></i>
+                        <p class="light-text">Loading</p>
+                    </div>
+                    <div class="icon-info">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p class="humidity-text">Loading</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hightlights">
+            <h2 class="heading">Today's Highlights</h2>
+            <div class="card2">
+                <h4 class="card-heading">Lamp</h4>
+                <div class="content">
+                    <i class="fa-solid fa-lightbulb led-icon off" id="lightbulb-icon" onclick="toggleLed('led1')"></i>
+                    <p class="lightbulb-text" id="lightbulb-text">Closed</p>
+                </div>
+            </div>
+            <div class="card2">
+                <h4 class="card-heading">Fan</h4>
+                <div class="content">
+                    <i class="fa-solid fa-fan led-icon off" id="fan-icon" onclick="toggleLed('led2')"></i>
+                    <p class="fan-text" id="fan-text">Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.min.js"></script>
+    <script src="../script/control-icon.js"></script>
+</body>
+</html>

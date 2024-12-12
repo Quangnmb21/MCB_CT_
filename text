@@ -1,0 +1,11 @@
+Để duy trì logic của cả hai API mà không gây xung đột giữa chúng, bạn cần thay đổi một số tên biến và giữ cho các hàm xử lý và hiển thị độc lập với nhau. Dưới đây là phiên bản sửa lại của mã của bạn để cả hai API đều có thể hoạt động độc lập trên cùng một trang HTML mà không gặp vấn đề về xung đột.
+
+Thông tin:
+
+Mysql:
+host: 'localhost',    
+user: 'root',         
+password: 'Quang',    
+database: 'quang',    
+
+MQTT

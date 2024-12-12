@@ -1,0 +1,1 @@
+startPythonServer('C:/Users/Name_user/Desktop/project/getdata.py');

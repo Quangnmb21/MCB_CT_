@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Fan và LED</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        :root {
+            --primary-clr: #5598fd;
+            --color-icons: black;
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            min-width: 100px;
+            padding: 50px;
+            background: #32785e; /* Áp dụng màu nền mới */
+            transition: background-image 0.3s ease;
+            background-image: linear-gradient(rgba(0,0,0,0.5)), rgba(0,0,0,0.5), url("./images/download-hinh-nen-cay-xanh-dep.jpg");
+        }
+
+        /* Wrapper */
+        .wrapper {
+            display: flex;
+            width: 1200px;
+            min-width: 900px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            min-width: 250px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.815);
+        }
+
+        /* Icon Style */
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            font-size: 80px;
+            color: gray;
+        }
+
+        .icon.fan i {
+            transition: transform 0.3s ease;
+        }
+
+        .icon.fan i.spin {
+            animation: spin 2s linear infinite;
+            color: #00aaff;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .icon.led i {
+            color: gray;
+        }
+
+        .icon.led i.on {
+            color: #ffaa00;
+        }
+
+        .icon p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+        <!-- Quạt -->
+        <div class="icon fan" onclick="toggleFan()">
+            <i id="fanIcon" class="fas fa-fan"></i>
+            <p class="fanIcon-text" id="fanIcon-text">loading(m/s)</p>
+            <p>Fan</p>
+        </div>
+        <!-- Vùng biểu đồ -->
+        <div class="chart-container">
+            <h2>Biểu đồ Sensor</h2>
+            <canvas id="sensorChart"></canvas>
+        </div>
+        <!-- LED -->
+        <div class="icon led" onclick="toggleLED()">
+            <i id="ledIcon" class="fas fa-lightbulb"></i>
+            <p>LED</p>
+        </div>
+</div>
+    
+
+    <script src="./script-lightbulb.js"></script>
+</body>
+
+</html>
+
+
+

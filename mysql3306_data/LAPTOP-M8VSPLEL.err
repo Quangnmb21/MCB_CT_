@@ -1,0 +1,59 @@
+2024-12-11T17:03:54.576108Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld (mysqld 8.0.40) initializing of server in progress as process 828
+2024-12-11T17:03:54.605784Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-12-11T17:03:54.894065Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-12-11T17:03:56.543617Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2024-12-11T17:17:46.549564Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 17820
+2024-12-11T17:17:46.551047Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:17:46.551219Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:17:46.553988Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:17:46.554077Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:17:53.521995Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 15472
+2024-12-11T17:17:53.523663Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:17:53.523827Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:17:53.525117Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:17:53.525196Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:17:55.735599Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 18972
+2024-12-11T17:17:55.737037Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:17:55.737194Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:17:55.738484Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:17:55.738553Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:18:16.824368Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 10404
+2024-12-11T17:18:16.825811Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:18:16.825978Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:18:16.827390Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:18:16.827465Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:18:18.383729Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 15768
+2024-12-11T17:18:18.385301Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:18:18.385459Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:18:18.386804Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:18:18.386891Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:19:58.099024Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 8792
+2024-12-11T17:19:58.100518Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:19:58.100687Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:19:58.101981Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:19:58.102048Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:20:55.647233Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 11112
+2024-12-11T17:20:55.648642Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:20:55.648795Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:20:55.650065Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:20:55.650137Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:21:51.863118Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 19304
+2024-12-11T17:21:51.864572Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:21:51.864737Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:21:51.866013Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:21:51.866089Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:22:48.229948Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 7484
+2024-12-11T17:22:48.232385Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:22:48.232675Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:22:48.235041Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:22:48.235167Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:23:38.295594Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 18524
+2024-12-11T17:23:38.297064Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:23:38.297249Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:23:38.298552Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:23:38.298629Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.
+2024-12-11T17:23:46.217231Z 0 [System] [MY-013169] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.40) initializing of server in progress as process 16428
+2024-12-11T17:23:46.218708Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-12-11T17:23:46.218865Z 0 [ERROR] [MY-013236] [Server] The designated data directory C:\Users\Name_user\Desktop\project\mysql3306_data\ is unusable. You can remove all files that the server added to it.
+2024-12-11T17:23:46.220146Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-12-11T17:23:46.220212Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.40)  MySQL Community Server - GPL.

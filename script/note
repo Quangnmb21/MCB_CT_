@@ -1,0 +1,2 @@
+MQTT: Để giao tiếp giữa server và các thiết bị qua giao thức MQTT.
+HTTP API: Để xử lý các yêu cầu từ client đến server bằng phương thức REST API thông qua Express.
